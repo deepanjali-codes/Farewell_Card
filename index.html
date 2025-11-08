@@ -98,11 +98,11 @@
         width: 980px;
         max-width: 96vw;
         border-radius: 18px;
-        padding: 18px;
+        padding: 30px;
         background: linear-gradient(
           180deg,
-          rgb(169, 170, 255),
-          rgb(250, 170, 243)
+          rgb(195, 195, 231),
+          rgb(250, 201, 247)
         );
         box-shadow: 0 18px 40px rgba(38, 20, 60, 0.12);
         position: relative;
@@ -113,17 +113,13 @@
       .header h1 {
         font-family: "Press Start 2P", monospace;
         color: var(--muted);
-        font-size: 18px;
-        margin-bottom: 10px;
+        font-size: 30px;
+        text-shadow: 0 0 8px #fcb1ca;
+        margin-bottom: 24px;
       }
-      .header p {
-        color: #ff026b;
-        font-size: 14px;
-        font-family: lucida handwriting;
-        text-shadow: 0 0 6px #ff79aa;
-        margin-top: 0;
+      .slides {
+        min-height: 150px;
       }
-
       .slide {
         display: none;
         font-size: 18px;
@@ -131,6 +127,13 @@
         font-weight: 600;
         font-style: oblique;
         color: #4d03a8;
+        text-align: center;
+        margin-top: 60px;
+        font-family: lucida handwriting;
+        background-color: #ab9fb4;
+        padding: 20px;
+        border-radius: 12px;
+        text-shadow: 0 0 6px #ff79aa;
         animation: fadeIn 1s ease-in-out;
       }
       .active {
@@ -197,10 +200,6 @@
       <div class="panel" id="panel">
         <div class="header">
           <h1>💞 Farewell to Our Amazing Reena Mam 💞</h1>
-          <p>
-            From your students — Deepanjali, Krishita, Bhavyata, Hardik, Preet,
-            Manthan & Swayam 💐
-          </p>
         </div>
 
         <div class="slides">
@@ -261,7 +260,7 @@
         setTimeout(() => heart.remove(), 1200);
       });
 
-      // Slideshow logic
+  
       let currentSlide = 0;
       const slides = document.querySelectorAll(".slide");
 
